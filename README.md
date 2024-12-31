@@ -1,7 +1,7 @@
 
 # Two-Factor Enforced
 
-A WordPress plugin that extends, the WordPress plugin Two-Factor to automatically enable Two-Factor provider for newly registered users.
+A WordPress plugin that extends, the WordPress plugin [Two-Factor](https://wordpress.org/plugins/two-factor/) to automatically enable Two-Factor for newly registered users.
 
 
 
