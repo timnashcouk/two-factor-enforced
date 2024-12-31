@@ -3,12 +3,17 @@
  * Plugin Name: Two-Factor Enforced
  * Description: Automatically enables Two-Factor authentication for newly registered users.
  * Plugin URI: https://github.com/timnashcouk/two-factor-enforced
- * Version: 1.2.0
+ * Version: 1.2.1
  * Author: Tim Nash
  * Author URI: https://timnash.co.uk
- * Text Domain: two-factor-auto-enable
+ * Text Domain: two-factor-enforced
+ * Requires at least: 6.7 
+ * Tested up to: 6.7
  * Requires PHP: 8.1
  * Requires Plugins: two-factor
+ * 
+ * License: GPLv3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  *
  * @package Two_Factor_Enforced
  */

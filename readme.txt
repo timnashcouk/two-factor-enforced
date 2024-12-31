@@ -1,11 +1,11 @@
 === Two-Factor Enforced === 
 Contributors: tnash 
-Tags: two-factor, security, user roles, authentication 
-Requires at least: 6.7 Tested up to: 6.7 
-Requires PHP: 8.1 
-Stable tag: 1.2.0 
-License: GPLv3 or later License URI: https://www.gnu.org/licenses/gpl-3.0.html 
-
+Tags: 2fa, mfa, totp, authentication, security
+Requires at least: 6.7 
+Tested up to: 6.7 
+Stable tag:   1.2.1
+License:      GPL-3.0-or-later
+License URI:  https://www.gnu.org/licenses/gpl-3.0.html
 Automatically enables two-factor authentication for new users, with customizable settings for roles and providers.
 
 == Description == 
@@ -34,13 +34,13 @@ The **Two-Factor Enforced** plugin extends the functionality of the Two-Factor p
 **Description**: Customize the list of two-factor providers enabled for new users. 
 **Default Behavior**: Only `Two_Factor_Email` is enabled by default. 
 **Example: Add `Two_Factor_Totp` as an additional provider** 
-```php add_filter('two_factor_enforced_default_providers', function (array $default_providers, int $user_id): array { return ['Two_Factor_Email', 'Two_Factor_Debug']; }, 10, 2); ```
+```php add_filter('two_factor_enforced_default_providers', function (array $default_providers, int $user_id): array { return ['Two_Factor_Email', 'Two_Factor_Totp']; }, 10, 2); ```
 
 ### 3. `tfa_primary_provider`
 **Description**: Customize the primary two-factor provider for new users. 
 **Default Behavior**: The primary provider is set to `Two_Factor_Email` by default. 
 **Example: Change the primary provider to `Two_Factor_Totp`** 
-```php add_filter('two_factor_enforced_primary_provider', function (string $default_primary_provider, int $user_id): string { return 'Two_Factor_Debug'; }, 10, 2); ```
+```php add_filter('two_factor_enforced_primary_provider', function (string $default_primary_provider, int $user_id): string { return 'Two_Factor_Totp'; }, 10, 2); ```
 
 == Frequently Asked Questions == 
 **1. Does this plugin work without the Two-Factor plugin?** 
@@ -53,6 +53,7 @@ Use the `two_factor_enabled_default_providers` filter to add additional provider
 Yes, use the `two_factor_enforced_primary_provider` filter to set a different primary provider.
 
 == Changelog == 
+= 1.2.1 = - Very Minor fixes to Readme and headers to meet the WP.org requirements.
 = 1.2.0 = - Added `two_factor_enabled_roles` filter to restrict two-factor authentication to specific roles. - Improved error handling and logging. 
 = 1.1.0 = - Added filters for customizing two-factor providers and primary provider. 
 = 1.0.0 = - Initial release with default functionality for enabling two-factor authentication.
