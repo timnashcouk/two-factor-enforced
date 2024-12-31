@@ -16,7 +16,7 @@ A WordPress plugin that extends, the WordPress plugin [Two-Factor](https://wordp
 
 Download the plugin ZIP file from this repository.
 1. Upload the ZIP file via the Plugins > Add New > Upload Plugin section of your WordPress dashboard.
-2. ctivate the plugin from the Plugins menu.
+2. Activate the plugin from the Plugins menu.
 
 ### WP-CLI Installation
 Run the following via WP-CLI
